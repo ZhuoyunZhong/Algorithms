@@ -76,11 +76,11 @@ class Maze:
                     
                     ### Sort the queue according to algorithm ###
                     # For DFS and BFS, the difference is where to insert new node into the queue
-                    if   search_algo == "DFS":
+                    if   search_algo == "BFS":
                         if new_node not in queue: # not insert existed one
                             new_node.parent = cur_node
                             queue.append(new_node)
-                    elif search_algo == "BFS":    
+                    elif search_algo == "DFS":    
                         if new_node not in queue: # not insert existed one
                             new_node.parent = cur_node
                             queue.insert(0, new_node)
