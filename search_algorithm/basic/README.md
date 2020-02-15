@@ -10,13 +10,13 @@
 
 ### Result explanation
 
-#### DFS
-
-DFS always expands the newest neighbor nodes first. As shown in the figure, it takes the most moves, exploring all the closest neighbors until finding the goal.
-
 #### BFS
 
-BFS always expands the closest neighbor nodes first. In this implementation, it always tries to go down first, then right, left, up. As shown in the figure, it takes the less moves to find the goal, but the path is not optimal.
+BFS always expands the closest neighbor nodes first. As shown in the figure, it takes the most moves, exploring all the closest neighbors until finding the goal.
+
+#### DFS
+
+DFS always expands the newest neighbor nodes first. In this implementation, it always tries to go down first, then right, left and up. As shown in the figure, it takes the less moves to find the goal, but the path is not optimal.
 
 #### Dijkstra
 
