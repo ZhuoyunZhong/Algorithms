@@ -10,19 +10,19 @@
 
 ### Result explanation
 
-##### DFS
+#### DFS
 
 DFS always expands the newest neighbor nodes first. As shown in the figure, it takes the most moves, exploring all the closest neighbors until finding the goal.
 
-##### BFS
+#### BFS
 
 BFS always expands the closest neighbor nodes first. In this implementation, it always tries to go down first, then right, left, up. As shown in the figure, it takes the less moves to find the goal, but the path is not optimal.
 
-##### Dijkstra
+#### Dijkstra
 
 The Exploring order of Dijkstra is decided by the cost function, which in Dijkstra case, equals to cost to come. To make the result a bit different. The cost to move (weight) of the upper map is set to be 0.5 higher than the other part. As shown in the figure, the path avoids the upper part of the map but choose a lower path even though it is longer in grid sense.
 
-##### A* 
+#### A* 
 
 The Exploring order of A* is decided by the cost function, which in A* case, equals to the sum of cost to come and heuristic. The same path as the Dijkstra's one is found as it is the optimal path. However, it takes only 29 moves, much less than 43 moves of Dijkstra, to find this path with the guide of heuristic.
 
