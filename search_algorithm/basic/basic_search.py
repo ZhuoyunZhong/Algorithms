@@ -142,7 +142,7 @@ class SearchMaze:
         plt.axis('scaled')
 
 
-def main():
+if __name__ == "__main__":
     # Define a maze, 0 is free and 1 is blocked
     grid = [[0, 1, 1, 0, 0, 0, 0, 0, 0, 0],
             [0, 1, 1, 0, 0, 0, 0, 0, 0, 0],
@@ -163,7 +163,3 @@ def main():
     task.Astar()
     # Show result
     plt.show()
-
-
-if __name__ == "__main__":
-    main()
