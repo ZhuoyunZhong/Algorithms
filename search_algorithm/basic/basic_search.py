@@ -35,7 +35,7 @@ class SearchMaze:
                 # heuristic: manhattan distance from the goal
                 h = abs(self.goal[0]-i) + abs(self.goal[1]-j)
                 # initialize a node instance and put it in the node_map
-                self.node_map[i][j] = Node(i, j, self.mat_map[i][j], c2m, h)
+                self.node_map[i][j] = SearchNode(i, j, self.mat_map[i][j], c2m, h)
         self.node_map[self.start[0]][self.start[1]].c2c = 0
 
 
@@ -156,7 +156,7 @@ if __name__ == "__main__":
     goal =  [3, 9]
 
     # Search with different algorithms
-    task = Maze(grid, start, goal)
+    task = SearchMaze(grid, start, goal)
     task.BFS()
     task.DFS()
     task.Dijkstra()
