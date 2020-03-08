@@ -4,5 +4,4 @@ Currently implemented
 
 ### [Search Algorithm](https://github.com/joeyzhong90595/Algorithms/tree/master/search_algorithm)
 
-Basic: BFS, DFS, Dijkstra, A*
-
+Basic: BFS, DFS, Dijkstra, A*, RRT, RRG, RRT*, informed RRT*
