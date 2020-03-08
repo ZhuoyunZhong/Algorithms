@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle
 
 # Class for each small grid
-class Node:
+class SearchNode:
     def __init__(self, x, y, is_obs, c2m, h):
         self.x = x            # coordinate
         self.y = y            # coordinate
@@ -14,7 +14,7 @@ class Node:
         self.parent = None    # previous node
 
 # Class for the whole map
-class Maze:
+class SearchMaze:
     # Constructor
     def __init__(self, mat_map, start, goal):
         self.start = start          # start coordinate
