@@ -4,22 +4,8 @@
 
 ### Result
 
-![Result](demo/result1.png)
+![Result](demo/RRT.png)
 
-### Result explanation
+![Result](demo/RRTstar.png)
 
-#### RRT
-
-
-
-#### RRG
-
-
-
-#### RRT*
-
-
-
-#### informed RRT*
-
-
+![Result](demo/Comparison.png)
