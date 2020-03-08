@@ -24,6 +24,7 @@ class SearchMaze:
         self.col = len(mat_map[0])  # map size
         # map consisting of a matrix of Nodes
         self.node_map = [[None for i in range(self.col)] for j in range(self.row)]
+        self.init_map()
 
     # Initialize the map before each searching
     def init_map(self):
